@@ -1,6 +1,6 @@
 provider: DNSPod
 email:
-login_token:
+password:
 domains:
   - domain_name: example.com
     sub_domains:
