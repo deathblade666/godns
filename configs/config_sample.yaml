@@ -1,5 +1,5 @@
 provider: DNSPod
-password:
+email:
 login_token:
 domains:
   - domain_name: example.com
@@ -30,6 +30,11 @@ notify:
     smtp_port: 25
     send_from:
     send_to:
+  discord:
+    enabled: false
+    bot_api_token:
+    channel:
+    message_template: (Optional) Domain *{{ .Domain }}* updated to \n{{ .CurrentIP }} #Optional
 webhook:
   enabled: false
   url: "http://localhost:5000/api/v1/send"
